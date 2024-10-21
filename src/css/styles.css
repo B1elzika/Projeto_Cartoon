@@ -13,7 +13,7 @@ body{
 }
 
 #menu-nav{
-    padding: 2.5%;
+    padding: 1.5%;
     background-color: black;
     margin-bottom: 2%;
 }
@@ -73,7 +73,7 @@ body{
     background-color: rgba(36, 36, 36, 0.799);
     width: 100%;
     height: 100%;
-    left: -110%;
+    left: -100%;
     top:0%;
     backdrop-filter: blur(5px);
     transition: .5s;
@@ -93,7 +93,7 @@ body{
     margin-right: 2%;
     margin-left: 2%;
     top:5%;
-    left: -110%;
+    left: -100%;
     color: white;
     transition: .5s;
     text-align: justify;
@@ -101,6 +101,9 @@ body{
 }
 .card-content h2{
     margin-bottom: 2%;
+}
+.card-content p{
+    font-weight: 500;
 }
 
 .card:hover .card-content{
