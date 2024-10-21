@@ -8,7 +8,7 @@
 }
 
 body{
-    font-family: "Robot",sans-serif;
+    font-family: "Roboto",sans-serif;
     background-color: var(--cor-fundo);
 }
 
@@ -41,7 +41,6 @@ body{
     color: black;
     transition: ease .2s;
     box-shadow: 0 5px 5px black;
-    font-size: 1;
 }
 
 #menu-nav img{
