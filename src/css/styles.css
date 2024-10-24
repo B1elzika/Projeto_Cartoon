@@ -1,5 +1,6 @@
 :root{
-    --cor-fundo: #09A7E3
+    --cor-fundo: #09A7E3;
+    /*background-image: linear-gradient(#f8f8f8,#979797);*/
 }
 
 *{
@@ -15,7 +16,7 @@ body{
 #menu-nav{
     padding: 1.5%;
     background-color: black;
-    margin-bottom: 2%;
+    
 }
 
 #menu-nav ul{
@@ -48,6 +49,67 @@ body{
     width: 10%;    
 }
 
+/*Slider de personagens*/
+.swiper-personagens{
+    background-color: #F8F7F8;
+    margin-bottom: 2%;
+}
+.wrapper-personagens{
+    padding: 1.5%;
+}
+
+.imagem-personagem{
+    width: 90px;
+    height: 90px;
+    background-image: linear-gradient(#c2c2c2,#979797);
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 1%;
+    transition: .2s ease;
+}
+
+.imagem-personagem:hover{
+    transform: scale(1.1);
+    transition: .2s ease;
+    filter: drop-shadow(0 0 5px black);
+    cursor:pointer;
+}
+
+.imagem-personagem img{
+    width: 95%;
+    transform: translateY(10%);
+    margin-left: 4%;
+}
+.swiper-button-prev{
+    position: relative;
+    margin-left: .5%;
+    
+}
+.swiper-button-prev::before{
+    content: "";
+    position: absolute;
+    background-color: #F8F7F8;
+    width: 75px;
+    height: 300%;
+    z-index: -1;
+    
+    
+}
+.swiper-button-next{
+    position: relative;
+    margin-right: .5%;
+
+}
+.swiper-button-next::before{
+    content: "";
+    position: absolute;
+    background-color: #F8F7F8;
+    width: 75px;
+    height: 300%;
+    z-index: -1;
+}
+
+/*Slider de cards*/
 #cards-container{
     display: flex;
     width: 100%;
@@ -55,7 +117,6 @@ body{
 .card{
     width: 30%;
     margin-left: 2.5%;
-    
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -82,11 +143,14 @@ body{
     left: 0;
     transition: .5s;
 }
+
+
 .card img{
     height: 100%;
     width: 100%;
     display: block;
 }
+
 .card-content{
     position: absolute;
     margin-right: 2%;
